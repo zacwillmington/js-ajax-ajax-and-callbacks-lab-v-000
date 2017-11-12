@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "practice jquery ajax",
   "main": "index.js",
-  "engines": {
-    "node": "6.x",
-    "npm": "3.x"
-  },
   "scripts": {
     "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
   },
