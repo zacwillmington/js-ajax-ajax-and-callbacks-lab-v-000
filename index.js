@@ -28,7 +28,7 @@ function displayRepositories(repos) {
 
 function showCommits(repo) {
     const repoName = repo.dataset.repo;
-    const searchUrl = `https://api.github.com/search/repositories?q=${searchTerm}`
+    const searchUrl = `https://api.github.com/search/repositories?q=${repoName}/commits`
     $.get(searchUrl, function(response) {
         $('#results').html(displaycommits(response));
     }).fail(function(error){
