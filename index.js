@@ -1,4 +1,7 @@
 $(document).ready(function (){
+    const searchTerm = document.getElementById('searchTerms').value;
+    const searchUrl = `https://api.github.com/search/repositories?q=${searchTerm}`;
+    
     $.get(searchUrl, function(response) {
         displayRepositories(response);
     }).fail(function(error){
@@ -8,8 +11,7 @@ $(document).ready(function (){
 
 
 function searchRepositories() {
-    const searchTerm = document.getElementById('searchTerms').value;
-    const searchUrl = `https://api.github.com/search/repositories?q=${searchTerm}`;
+
 }
 
 function displayRepositories(repos) {
