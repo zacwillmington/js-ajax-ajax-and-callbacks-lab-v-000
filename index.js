@@ -26,7 +26,7 @@ function displayRepositories(repos) {
 
 }
 
-function showCommits(repo) {
+function showCommits(el) {
 
     // const repoName = repo.dataset.repo;
     // const userName = repo.dataset.usrname;
