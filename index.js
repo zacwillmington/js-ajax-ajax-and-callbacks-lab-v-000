@@ -29,6 +29,15 @@ function displayRepositories(repos) {
 function showCommits(repo) {
     const repoName = repo.dataset.repo;
     
+    $.get(searchUrl, function(response) {
+        $('#results').html(displaycommits(response));
+    }).fail(function(error){
+        displayError();
+    });
+}
+
+function displaycommits(repo){
+
 }
 
 
