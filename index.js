@@ -1,12 +1,5 @@
 $(document).ready(function (){
-    // const searchTerm = document.getElementById('searchTerms').value;
-    // const searchUrl = `https://api.github.com/search/repositories?q=${searchTerm}`;
-    // debugger;
-    // $.get(searchUrl, function(response) {
-    //     searchRepositories(response);
-    // }).fail(function(error){
-    //     $('#errors').append("<p>/error/</p>");
-    // });
+
 });
 
 
