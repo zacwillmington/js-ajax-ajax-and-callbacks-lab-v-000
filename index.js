@@ -35,7 +35,7 @@ function showCommits(repo) {
 
     const searchUrl = `https://api.github.com/repos/${userName}/${repoName}/commits`
     $.get(searchUrl, function(response) {
-        $('#results').html(displaycommits(response));
+        $('#details').html(displaycommits(response));
     }).fail(function(error){
         displayError();
     });
