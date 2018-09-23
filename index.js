@@ -9,7 +9,7 @@ function searchRepositories() {
     $.get(searchUrl, function(response) {
         displayRepositories(response);
     }).fail(function(error){
-        
+        let errorDiv = document.getElementById('errors');
     });
 }
 
