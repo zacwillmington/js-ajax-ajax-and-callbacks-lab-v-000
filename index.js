@@ -24,6 +24,7 @@ function searchRepositories(response) {
 }
 
 function displayRepositories(repos) {
+    debugger;
     let reposList = '<ul>' + `${repos.items.map(function(repo) {
             return '<li>' + repo.name + '</li>' +
             '<a href="#" onclick="showCommits('+ this + ');">See Commits</a>';
@@ -31,7 +32,7 @@ function displayRepositories(repos) {
     )};`
 
     document.getElementById('results').innerHTML + reposList;
-    
+    debugger;
 }
 
 function showCommits() {
