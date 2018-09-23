@@ -29,7 +29,8 @@ function displayRepositories(repos) {
             '<a href="#" onclick="showCommits(this);">See Commits</a>' + '</li>'
         }
     ).join('')}` + '</ul>';
-
+    debugger;
+    
     document.getElementById('results').innerHTML + reposList;
 
 }
