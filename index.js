@@ -19,7 +19,7 @@ function displayRepositories(repos) {
 
     let reposList = '<ul>' + `${repos.items.map(function(repo) {
             return '<li>' + repo.name  +
-            '<a href="#" data-repo="'+ repo.name +'" onclick="showCommits();">See Commits</a>' + '</li>'
+            '<a href="#" data-repo="'+ repo.name +'" onclick="showCommits(this);">See Commits</a>' + '</li>'
         }
     ).join('')}` + '</ul>';
     return reposList;
