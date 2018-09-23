@@ -10,6 +10,8 @@ function searchRepositories() {
         displayRepositories(response);
     }).fail(function(error){
         let errorDiv = document.getElementById('errors').innerHTML;
+
+        errorDiv + "<p>error</p>"
         debugger;
     });
 }
