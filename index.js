@@ -28,10 +28,10 @@ function displayRepositories(repos) {
 
 function showCommits(el) {
 
-    // const repoName = repo.dataset.repo;
-    // const userName = repo.dataset.usrname;
-    const userName = el.dataset.owner;
-    const repoName = el.dataset.repository;
+    const repoName = repo.dataset.repo;
+    const userName = repo.dataset.usrname;
+    // const userName = el.dataset.owner;
+    // const repoName = el.dataset.repository;
 
     const searchUrl = `https://api.github.com/repos/${userName}/${repoName}/commits`
     $.get(searchUrl, function(response) {
