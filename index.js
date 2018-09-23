@@ -40,7 +40,7 @@ function showCommits(repo) {
     });
 }
 
-function displaycommits(repo){
+function displaycommits(commits){
     debugger;
 }
 
