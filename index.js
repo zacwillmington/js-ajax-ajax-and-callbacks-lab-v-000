@@ -27,6 +27,7 @@ function displayRepositories(repos) {
 }
 
 function showCommits(repo) {
+    debugger;
     const repoName = repo.dataset.repo;
     const searchUrl = `https://api.github.com/search/repositories/${repoName}/commits`
     $.get(searchUrl, function(response) {
