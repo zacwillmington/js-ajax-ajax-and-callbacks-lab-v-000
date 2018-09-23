@@ -18,7 +18,6 @@ function searchRepositories(response) {
 function displayRepositories(repos) {
 
     let reposList = '<ul>' + `${repos.items.map(function(repo) {
-        debugger;
             return '<li>' + repo.name  +
             '<a href="#" data-usrName=' + repo.owner.login + ' data-repo="'+ repo.name +'" onclick="showCommits(this);">See Commits</a>' + '</li>'
         }
@@ -42,6 +41,7 @@ function showCommits(repo) {
 
 function displaycommits(commits){
     debugger;
+
 }
 
 
