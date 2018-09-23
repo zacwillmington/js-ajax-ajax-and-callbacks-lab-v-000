@@ -3,7 +3,7 @@ $(document).ready(function (){
     const searchUrl = `https://api.github.com/search/repositories?q=${searchTerm}`;
     debugger;
     $.get(searchUrl, function(response) {
-        displayRepositories(response);
+        searchRepositories(response);
     }).fail(function(error){
         $('#errors').append("<p>/error/</p>");
     });
