@@ -1,5 +1,5 @@
 $(document).ready(function (){
-    Handlebars.
+
 });
 
 
@@ -12,9 +12,21 @@ function searchRepositories() {
 }
 
 function displayRepositories(repos) {
+    debugger;
+    let reposList = '<ul>' + `${repos.items.map(function(repo) {
+            <li>repo.name</li>
+            <a href="#" onclick="showCommits();">See Commits</a>
+        }
+    )};`
+    //repositoryTemplateFn(repos)
 
-    
 }
+
+function showCommits() {
+    debugger;
+
+}
+
 
 function displayError() {
 
