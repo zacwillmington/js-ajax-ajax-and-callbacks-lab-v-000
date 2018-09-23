@@ -9,8 +9,6 @@ function searchRepositories() {
     $.get(searchUrl, function(response) {
         displayRepositories(response);
     }).fail(function(error){
-        let errorMsg = error.responseText;
-
         $('#errors').append('<p>/error/</p>');
         debugger;
     });
