@@ -12,6 +12,13 @@ $(document).ready(function (){
 
 function searchRepositories(response) {
     debugger;
+    let reposList = '<ul>' + `${repos.items.map(function(repo) {
+            return '<li>' + repo.name + '</li>' +
+            '<a href="#" onclick="showCommits('+ this + ');">See Commits</a>';
+        }
+    )};`
+
+    document.getElementById('results').innerHTML + reposList;
 }
 
 function displayRepositories(repos) {
