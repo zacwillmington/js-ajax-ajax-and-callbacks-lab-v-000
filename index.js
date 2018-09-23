@@ -1,16 +1,15 @@
 $(document).ready(function (){
-
+    $.get(searchUrl, function(response) {
+        displayRepositories(response);
+    }).fail(function(error){
+        $('#errors').append("<p>/error/</p>");
+    });
 });
 
 
 function searchRepositories() {
     const searchTerm = document.getElementById('searchTerms').value;
     const searchUrl = `https://api.github.com/search/repositories?q=${searchTerm}`;
-    $.get(searchUrl, function(response) {
-        displayRepositories(response);
-    }).fail(function(error){
-        $('#errors').append("<p>/error/</p>");
-    });
 }
 
 function displayRepositories(repos) {
