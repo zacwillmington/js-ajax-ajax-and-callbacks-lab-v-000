@@ -26,7 +26,7 @@ function displayRepositories(repos) {
 
 }
 
-function showCommits() {
+function showCommits(repo) {
     debugger;
 
 }
