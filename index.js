@@ -12,7 +12,6 @@ function searchRepositories() {
 }
 
 function displayRepositories(repos) {
-    debugger;
     let reposList = '<ul>' + `${repos.items.map(function(repo) {
             return '<li>' + repo.name + '</li>' +
             '<a href="#" onclick="showCommits('+ this + ');">See Commits</a>';
