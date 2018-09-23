@@ -16,7 +16,7 @@ function searchRepositories(response) {
     const searchUrl = `https://api.github.com/search/repositories?q=${searchTerm}`;
 
     $.get(searchUrl, function(response) {
-        displayRepositories(response);
+        $('#results').html(displayRepositories(response));
     }).fail(function(error){
         displayError();
     });
@@ -30,7 +30,7 @@ function displayRepositories(repos) {
         }
     ).join('')}` + '</ul>';
     debugger;
-    
+
     return reposList;
 
 }
