@@ -10,7 +10,6 @@ function searchRepositories() {
         displayRepositories(response);
     }).fail(function(error){
         $('#errors').append('<p>/error/</p>');
-        debugger;
     });
 }
 
