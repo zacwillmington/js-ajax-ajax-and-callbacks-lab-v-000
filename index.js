@@ -10,7 +10,7 @@ $(document).ready(function (){
 });
 
 
-function searchRepositories() {
+function searchRepositories(response) {
     debugger;
 }
 
