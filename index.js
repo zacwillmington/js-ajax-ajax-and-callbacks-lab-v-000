@@ -43,6 +43,12 @@ function showCommits(el) {
 
 function displaycommits(commits){
     debugger;
+    let commitsList = '<ul>' + `${commit.items.map(function(commit) {
+            return '<li>' + commit.name  +
+            '<a href="#" data-usrName=' + commit.url + ' data-repo="'commit.name +'" onclick="showCommits(this);">See Commits</a>' + '</li>'
+        }
+    ).join('')}` + '</ul>';
+    return reposList;
 
 }
 
