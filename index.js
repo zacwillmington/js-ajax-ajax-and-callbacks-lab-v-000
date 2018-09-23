@@ -9,9 +9,9 @@ function searchRepositories() {
     $.get(searchUrl, function(response) {
         displayRepositories(response);
     }).fail(function(error){
-        let errorDiv = document.getElementById('errors').innerHTML;
         let errorMsg = error.responseText;
-        errorDiv + '<h1>error</h1>';
+        
+        $('#errors').append('<h1>error</h1>');
         debugger;
     });
 }
