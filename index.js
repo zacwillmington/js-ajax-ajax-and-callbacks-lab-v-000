@@ -19,7 +19,7 @@ function displayRepositories(repos) {
         }
     )};`
 
-
+    document.getElementById('results').innerHTML + reposList;
 }
 
 function showCommits() {
