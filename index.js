@@ -11,7 +11,7 @@ function searchRepositories() {
     }).fail(function(error){
         let errorMsg = error.responseText;
         
-        $('#errors').append('<h1>error</h1>');
+        $('#errors').append('<p>error</p>');
         debugger;
     });
 }
