@@ -28,7 +28,7 @@ function displayRepositories(repos) {
 }
 
 function showCommits(repo) {
-    
+
     const repoName = repo.dataset.repo;
     const userName = repo.dataset.usrName;
 
@@ -41,7 +41,7 @@ function showCommits(repo) {
 }
 
 function displaycommits(repo){
-
+    debugger;
 }
 
 
