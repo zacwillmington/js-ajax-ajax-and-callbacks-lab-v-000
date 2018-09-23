@@ -25,7 +25,7 @@ function searchRepositories(response) {
 function displayRepositories(repos) {
     debugger;
     let reposList = '<ul>' + `${repos.items.map(function(repo) {
-            '<li>' + repo.name  +
+            return '<li>' + repo.name  +
             '<a href="#" onclick="showCommits(this);">See Commits</a>' + '</li>'
         }
     ).join()}` + '</ul>';
