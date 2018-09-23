@@ -11,7 +11,7 @@ $(document).ready(function (){
 
 
 function searchRepositories() {
-
+    debugger;
 }
 
 function displayRepositories(repos) {
