@@ -11,14 +11,16 @@ $(document).ready(function (){
 
 
 function searchRepositories(response) {
-    debugger;
-    let reposList = '<ul>' + `${repos.items.map(function(repo) {
-            return '<li>' + repo.name + '</li>' +
-            '<a href="#" onclick="showCommits('+ this + ');">See Commits</a>';
-        }
-    )};`
 
-    document.getElementById('results').innerHTML + reposList;
+    const searchTerm = document.getElementById('searchTerms').value;
+    const searchUrl = `https://api.github.com/search/repositories?q=${searchTerm}`;
+    
+    debugger;
+    $.get(searchUrl, function(response) {
+        displayRepositories(response);
+    }).fail(function(error){
+        displayError();
+    });
 }
 
 function displayRepositories(repos) {
@@ -38,5 +40,5 @@ function showCommits() {
 
 
 function displayError() {
-
+    $('#errors').append("<p>/error/</p>");
 }
