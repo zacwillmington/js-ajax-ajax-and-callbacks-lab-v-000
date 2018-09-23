@@ -20,6 +20,11 @@
   </head>
   <body>
     <main id="main">
+        <form onclick="searchRepositories(); return false">
+            <input type="text" id="searchTerms">
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchTerms"></div>
       <div id="errors"></div>
     </main>
     <div class="flexbox-container">
@@ -32,6 +37,11 @@
         <div id="details"></div>
       </div>
     </div>
+
+    <script id="repository-template" type="text/x-handlebars-template">
+        <header>{{name}}</header>
+        <p>Number of forks {{forks}}</p>
+    </script>
     <script src="jquery-3.1.0.min.js"></script>
     <script src="index.js"></script>
   </body>
