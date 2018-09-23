@@ -47,7 +47,7 @@ function displaycommits(commits){
             return '<li>' + commit.sha + '</li>'
         }
     ).join('')}` + '</ul>';
-    return reposList;
+    return commitsList;
 
 }
 
