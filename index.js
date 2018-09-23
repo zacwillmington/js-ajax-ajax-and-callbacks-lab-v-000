@@ -10,8 +10,8 @@ function searchRepositories() {
         displayRepositories(response);
     }).fail(function(error){
         let errorMsg = error.responseText;
-        
-        $('#errors').append('<p>error</p>');
+
+        $('#errors').append('<p>/error/</p>');
         debugger;
     });
 }
