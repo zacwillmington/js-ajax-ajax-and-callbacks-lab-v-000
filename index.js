@@ -11,7 +11,7 @@ function searchRepositories() {
     }).fail(function(error){
         let errorDiv = document.getElementById('errors').innerHTML;
         let errorMsg = error.responseText;
-        errorDiv + 'error';
+        errorDiv + '<h1>error</h1>';
         debugger;
     });
 }
