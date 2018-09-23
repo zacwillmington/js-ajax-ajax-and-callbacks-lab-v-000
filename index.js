@@ -8,6 +8,8 @@ function searchRepositories() {
     const searchUrl = `https://api.github.com/search/repositories?q=${searchTerm}`;
     $.get(searchUrl, function(response) {
         displayRepositories(response);
+    }).fail(function(error){
+        
     });
 }
 
