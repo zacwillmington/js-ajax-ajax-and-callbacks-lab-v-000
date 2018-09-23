@@ -27,7 +27,9 @@ function displayRepositories(repos) {
 }
 
 function showCommits(repo) {
-    debugger;
+    const repoName = repo.dataset.repo;
+    
+
 
 }
 
