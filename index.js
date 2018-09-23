@@ -18,7 +18,7 @@ function displayRepositories(repos) {
             <a href="#" onclick="showCommits();">See Commits</a>
         }
     )};`
-    //repositoryTemplateFn(repos)
+    
 
 }
 
