@@ -14,11 +14,11 @@ function searchRepositories() {
 function displayRepositories(repos) {
     debugger;
     let reposList = '<ul>' + `${repos.items.map(function(repo) {
-            <li>repo.name</li>
-            <a href="#" onclick="showCommits();">See Commits</a>
+            return '<li>' + repo.name + '</li>' +
+            '<a href="#" onclick="showCommits('+ this + ');">See Commits</a>';
         }
     )};`
-    
+
 
 }
 
