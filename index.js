@@ -9,7 +9,7 @@ function searchRepositories() {
     $.get(searchUrl, function(response) {
         displayRepositories(response);
     }).fail(function(error){
-        $('#errors').append().html('<p>/error/</p>');
+        $('#errors').html('<p>/error/</p>');
     });
 }
 
