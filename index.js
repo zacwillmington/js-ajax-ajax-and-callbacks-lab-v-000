@@ -43,7 +43,7 @@ function showCommits(repo) {
 
 function displaycommits(commits){
     debugger;
-    let commitsList = '<ul>' + `${commit.items.map(function(commit) {
+    let commitsList = '<ul>' + `${commit.map(function(commit) {
             return '<li>' + commit.sha + '</li>'
         }
     ).join('')}` + '</ul>';
